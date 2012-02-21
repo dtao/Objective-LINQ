@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Objective-Linq' target in the 'Objective-Linq' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

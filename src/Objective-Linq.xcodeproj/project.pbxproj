@@ -1,0 +1,244 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D669DFE914F4A43B00DF3144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D669DFE814F4A43B00DF3144 /* Foundation.framework */; };
+		D669DFFC14F4A47000DF3144 /* NSArray+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = D669DFF814F4A47000DF3144 /* NSArray+Map.h */; };
+		D669DFFD14F4A47000DF3144 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = D669DFF914F4A47000DF3144 /* NSArray+Map.m */; };
+		D669DFFE14F4A47000DF3144 /* NSArray+Select.h in Headers */ = {isa = PBXBuildFile; fileRef = D669DFFA14F4A47000DF3144 /* NSArray+Select.h */; };
+		D669DFFF14F4A47000DF3144 /* NSArray+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = D669DFFB14F4A47000DF3144 /* NSArray+Select.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D669DFE514F4A43B00DF3144 /* libObjective-Linq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libObjective-Linq.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D669DFE814F4A43B00DF3144 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D669DFEC14F4A43B00DF3144 /* Objective-Linq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-Linq-Prefix.pch"; sourceTree = "<group>"; };
+		D669DFF814F4A47000DF3144 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = SOURCE_ROOT; };
+		D669DFF914F4A47000DF3144 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = SOURCE_ROOT; };
+		D669DFFA14F4A47000DF3144 /* NSArray+Select.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Select.h"; sourceTree = SOURCE_ROOT; };
+		D669DFFB14F4A47000DF3144 /* NSArray+Select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Select.m"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D669DFE214F4A43B00DF3144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D669DFE914F4A43B00DF3144 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D669DFDA14F4A43B00DF3144 = {
+			isa = PBXGroup;
+			children = (
+				D669DFEA14F4A43B00DF3144 /* Objective-Linq */,
+				D669DFE714F4A43B00DF3144 /* Frameworks */,
+				D669DFE614F4A43B00DF3144 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D669DFE614F4A43B00DF3144 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D669DFE514F4A43B00DF3144 /* libObjective-Linq.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D669DFE714F4A43B00DF3144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D669DFE814F4A43B00DF3144 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D669DFEA14F4A43B00DF3144 /* Objective-Linq */ = {
+			isa = PBXGroup;
+			children = (
+				D669DFF814F4A47000DF3144 /* NSArray+Map.h */,
+				D669DFF914F4A47000DF3144 /* NSArray+Map.m */,
+				D669DFFA14F4A47000DF3144 /* NSArray+Select.h */,
+				D669DFFB14F4A47000DF3144 /* NSArray+Select.m */,
+				D669DFEB14F4A43B00DF3144 /* Supporting Files */,
+			);
+			path = "Objective-Linq";
+			sourceTree = "<group>";
+		};
+		D669DFEB14F4A43B00DF3144 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D669DFEC14F4A43B00DF3144 /* Objective-Linq-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D669DFE314F4A43B00DF3144 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D669DFFC14F4A47000DF3144 /* NSArray+Map.h in Headers */,
+				D669DFFE14F4A47000DF3144 /* NSArray+Select.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D669DFE414F4A43B00DF3144 /* Objective-Linq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D669DFF214F4A43B00DF3144 /* Build configuration list for PBXNativeTarget "Objective-Linq" */;
+			buildPhases = (
+				D669DFE114F4A43B00DF3144 /* Sources */,
+				D669DFE214F4A43B00DF3144 /* Frameworks */,
+				D669DFE314F4A43B00DF3144 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Objective-Linq";
+			productName = "Objective-Linq";
+			productReference = D669DFE514F4A43B00DF3144 /* libObjective-Linq.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D669DFDC14F4A43B00DF3144 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D669DFDF14F4A43B00DF3144 /* Build configuration list for PBXProject "Objective-Linq" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D669DFDA14F4A43B00DF3144;
+			productRefGroup = D669DFE614F4A43B00DF3144 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D669DFE414F4A43B00DF3144 /* Objective-Linq */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D669DFE114F4A43B00DF3144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D669DFFD14F4A47000DF3144 /* NSArray+Map.m in Sources */,
+				D669DFFF14F4A47000DF3144 /* NSArray+Select.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D669DFF014F4A43B00DF3144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D669DFF114F4A43B00DF3144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D669DFF314F4A43B00DF3144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Objective_Linq.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Objective-Linq/Objective-Linq-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D669DFF414F4A43B00DF3144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Objective_Linq.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Objective-Linq/Objective-Linq-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D669DFDF14F4A43B00DF3144 /* Build configuration list for PBXProject "Objective-Linq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D669DFF014F4A43B00DF3144 /* Debug */,
+				D669DFF114F4A43B00DF3144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D669DFF214F4A43B00DF3144 /* Build configuration list for PBXNativeTarget "Objective-Linq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D669DFF314F4A43B00DF3144 /* Debug */,
+				D669DFF414F4A43B00DF3144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D669DFDC14F4A43B00DF3144 /* Project object */;
+}

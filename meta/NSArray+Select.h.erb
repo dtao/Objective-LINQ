@@ -1,0 +1,12 @@
+<% types.each do |target| -%>
+<% target_type = "NS#{target}" -%>
+typedef BOOL (^<%= target %>Predicate)(<%= target_type %> *input);
+<% end -%>
+
+@interface NSArray(Select)
+
+<% types.each do |target| -%>
+- (NSArray *) select<%= target %>s:(<%= target %>Predicate)predicate;
+<% end -%>
+
+@end

@@ -1,0 +1,20 @@
+#import "NSArray+Map.h"
+
+@implementation NSArray(Map)
+
+<% types.each do |source| -%>
+<% types.each do |target| -%>
+<% source_type = "NS#{source}" %>
+- (NSArray *) map<%= source %>sTo<%= target %>s:(<%= source %>To<%= target %>Converter)converter {
+  NSMutableArray *result = [NSMutableArray arrayWithCapacity:[self count]];
+
+  for (<%= source_type %> *element in self) {
+    [result addObject:converter(element)];
+  }
+
+  return result;
+}
+
+<% end -%>
+<% end -%>
+@end

@@ -1,0 +1,17 @@
+<% types.each do |source| -%>
+<% types.each do |target| -%>
+<% source_type = "NS#{source}" -%>
+<% target_type = "NS#{target}" -%>
+typedef <%= target_type %> *(^<%= source %>To<%=target %>Converter)(<%= source_type %> *input);
+<% end -%>
+<% end -%>
+
+@interface NSArray(Map)
+
+<% types.each do |source| -%>
+<% types.each do |target| -%>
+- (NSArray *) map<%= source %>sTo<%= target %>s:(<%= source %>To<%= target %>Converter)converter;
+<% end -%>
+<% end -%>
+
+@end
