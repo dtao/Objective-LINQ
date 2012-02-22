@@ -1,0 +1,21 @@
+#import "NSArray+Dictionary.h"
+
+@implementation NSArray(Dictionary)
+
+<% types.each do |source| -%>
+<% types.each do |target| -%>
+<% source_type = "NS#{source}" %>
+<% target_type = "NS#{target}" %>
+- (NSDictionary *) dictionaryOf<%= source %>sWith<%= target %>Keys:(<%= source %>To<%= target %>Converter)converter {
+  NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithCapacity:[self count]];
+
+  for (<%= source_type %> *element in self) {
+    [dictionary setObject:element forKey:converter(element)];
+  }
+
+  return dictionary;
+}
+
+<% end -%>
+<% end -%>
+@end

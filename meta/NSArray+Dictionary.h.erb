@@ -1,0 +1,11 @@
+#import "ObjLinqBlocks.h"
+
+@interface NSArray(Dictionary)
+
+<% types.each do |source| -%>
+<% types.each do |target| -%>
+- (NSDictionary *) dictionaryOf<%= source %>sWith<%= target %>Keys:(<%= source %>To<%= target %>Converter)converter;
+<% end -%>
+<% end -%>
+
+@end
