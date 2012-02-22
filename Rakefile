@@ -4,16 +4,12 @@ desc "Renders ERB templates to Objective-C source files"
 task :populate do
   types = %w{String Number Value Array Object}
 
-  %w{Map Select}.each do |category|
-    file = "NSArray+#{category}"
-
-    %w{h m}.each do |ext|
-      input = File.read("meta/#{file}.#{ext}.erb")
-      eruby = Erubis::Eruby.new(input)
-      File.open(File.join("Objective-Linq", "#{file}.#{ext}"), "w").write(eruby.result(:types => types))
-    end
+  Dir.glob(File.join("meta", "*.erb")).each do |f|
+    input = File.read(f)
+    eruby = Erubis::Eruby.new(input)
+    File.open(File.join("Objective-Linq", File.basename(f).chomp(".erb")), "w").write(eruby.result(:types => types))
   end
-  
+
   puts "Source populated."
 end
 

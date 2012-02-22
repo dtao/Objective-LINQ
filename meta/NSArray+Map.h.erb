@@ -1,10 +1,4 @@
-<% types.each do |source| -%>
-<% types.each do |target| -%>
-<% source_type = "NS#{source}" -%>
-<% target_type = "NS#{target}" -%>
-typedef <%= target_type %> *(^<%= source %>To<%=target %>Converter)(<%= source_type %> *input);
-<% end -%>
-<% end -%>
+#import "ObjLinqBlocks.h"
 
 @interface NSArray(Map)
 

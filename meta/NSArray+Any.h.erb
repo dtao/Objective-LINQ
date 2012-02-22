@@ -1,0 +1,9 @@
+#import "ObjLinqBlocks.h"
+
+@interface NSArray(Any)
+
+<% types.each do |target| -%>
+- (BOOL) any<%= target %>:(<%= target %>Predicate)predicate;
+<% end -%>
+
+@end

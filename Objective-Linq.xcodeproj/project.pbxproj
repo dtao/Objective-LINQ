@@ -11,6 +11,9 @@
 		D60908E014F4C19A007C0B2F /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = D60908DC14F4C19A007C0B2F /* NSArray+Map.m */; };
 		D60908E114F4C19A007C0B2F /* NSArray+Select.h in Headers */ = {isa = PBXBuildFile; fileRef = D60908DD14F4C19A007C0B2F /* NSArray+Select.h */; };
 		D60908E214F4C19A007C0B2F /* NSArray+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = D60908DE14F4C19A007C0B2F /* NSArray+Select.m */; };
+		D60908E514F526E4007C0B2F /* NSArray+Any.h in Headers */ = {isa = PBXBuildFile; fileRef = D60908E314F526E4007C0B2F /* NSArray+Any.h */; };
+		D60908E614F526E4007C0B2F /* NSArray+Any.m in Sources */ = {isa = PBXBuildFile; fileRef = D60908E414F526E4007C0B2F /* NSArray+Any.m */; };
+		D60908E814F52708007C0B2F /* NSArrayAnySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D60908E714F52708007C0B2F /* NSArrayAnySpec.m */; };
 		D690C91114F4B1D60006DEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D690C91014F4B1D60006DEB0 /* Foundation.framework */; };
 		D690C91F14F4B1D60006DEB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D690C91E14F4B1D60006DEB0 /* SenTestingKit.framework */; };
 		D690C92114F4B1D60006DEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D690C92014F4B1D60006DEB0 /* UIKit.framework */; };
@@ -37,6 +40,10 @@
 		D60908DC14F4C19A007C0B2F /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
 		D60908DD14F4C19A007C0B2F /* NSArray+Select.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Select.h"; sourceTree = "<group>"; };
 		D60908DE14F4C19A007C0B2F /* NSArray+Select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Select.m"; sourceTree = "<group>"; };
+		D60908E314F526E4007C0B2F /* NSArray+Any.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Any.h"; sourceTree = "<group>"; };
+		D60908E414F526E4007C0B2F /* NSArray+Any.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Any.m"; sourceTree = "<group>"; };
+		D60908E714F52708007C0B2F /* NSArrayAnySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayAnySpec.m; sourceTree = "<group>"; };
+		D60908E914F52AAF007C0B2F /* ObjLinqBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjLinqBlocks.h; sourceTree = "<group>"; };
 		D690C90D14F4B1D60006DEB0 /* libObjective-Linq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libObjective-Linq.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D690C91014F4B1D60006DEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D690C91414F4B1D60006DEB0 /* Objective-Linq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-Linq-Prefix.pch"; sourceTree = "<group>"; };
@@ -107,6 +114,9 @@
 		D690C91214F4B1D60006DEB0 /* Objective-Linq */ = {
 			isa = PBXGroup;
 			children = (
+				D60908E914F52AAF007C0B2F /* ObjLinqBlocks.h */,
+				D60908E314F526E4007C0B2F /* NSArray+Any.h */,
+				D60908E414F526E4007C0B2F /* NSArray+Any.m */,
 				D60908DB14F4C19A007C0B2F /* NSArray+Map.h */,
 				D60908DC14F4C19A007C0B2F /* NSArray+Map.m */,
 				D60908DD14F4C19A007C0B2F /* NSArray+Select.h */,
@@ -130,6 +140,7 @@
 				D690C92714F4B1D70006DEB0 /* Supporting Files */,
 				D690C94A14F4B3A70006DEB0 /* NSArrayMapSpec.m */,
 				D690C96314F4BB840006DEB0 /* NSArraySelectSpec.m */,
+				D60908E714F52708007C0B2F /* NSArrayAnySpec.m */,
 			);
 			path = "Objective-LinqTests";
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 			files = (
 				D60908DF14F4C19A007C0B2F /* NSArray+Map.h in Headers */,
 				D60908E114F4C19A007C0B2F /* NSArray+Select.h in Headers */,
+				D60908E514F526E4007C0B2F /* NSArray+Any.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +266,7 @@
 			files = (
 				D60908E014F4C19A007C0B2F /* NSArray+Map.m in Sources */,
 				D60908E214F4C19A007C0B2F /* NSArray+Select.m in Sources */,
+				D60908E614F526E4007C0B2F /* NSArray+Any.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +276,7 @@
 			files = (
 				D690C94B14F4B3A70006DEB0 /* NSArrayMapSpec.m in Sources */,
 				D690C96414F4BB840006DEB0 /* NSArraySelectSpec.m in Sources */,
+				D60908E814F52708007C0B2F /* NSArrayAnySpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,4 @@
-<% types.each do |target| -%>
-<% target_type = "NS#{target}" -%>
-typedef BOOL (^<%= target %>Predicate)(<%= target_type %> *input);
-<% end -%>
+#import "ObjLinqBlocks.h"
 
 @interface NSArray(Select)
 

@@ -1,0 +1,18 @@
+#import "NSArray+Any.h"
+
+@implementation NSArray(Any)
+
+<% types.each do |target| -%>
+<% target_type = "NS#{target}" -%>
+- (BOOL) any<%= target %>:(<%= target %>Predicate)predicate {
+  for (<%= target_type %> *element in self) {
+    if (predicate(element)) {
+      return YES;
+    }
+  }
+
+  return NO;
+}
+
+<% end -%>
+@end

@@ -1,0 +1,12 @@
+<% types.each do |source| -%>
+<% types.each do |target| -%>
+<% source_type = "NS#{source}" -%>
+<% target_type = "NS#{target}" -%>
+typedef <%= target_type %> *(^<%= source %>To<%=target %>Converter)(<%= source_type %> *input);
+<% end -%>
+<% end -%>
+
+<% types.each do |target| -%>
+<% target_type = "NS#{target}" -%>
+typedef BOOL (^<%= target %>Predicate)(<%= target_type %> *input);
+<% end -%>
