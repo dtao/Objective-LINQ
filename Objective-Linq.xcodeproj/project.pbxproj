@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60908DF14F4C19A007C0B2F /* NSArray+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = D60908DB14F4C19A007C0B2F /* NSArray+Map.h */; };
+		D60908E014F4C19A007C0B2F /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = D60908DC14F4C19A007C0B2F /* NSArray+Map.m */; };
+		D60908E114F4C19A007C0B2F /* NSArray+Select.h in Headers */ = {isa = PBXBuildFile; fileRef = D60908DD14F4C19A007C0B2F /* NSArray+Select.h */; };
+		D60908E214F4C19A007C0B2F /* NSArray+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = D60908DE14F4C19A007C0B2F /* NSArray+Select.m */; };
 		D690C91114F4B1D60006DEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D690C91014F4B1D60006DEB0 /* Foundation.framework */; };
 		D690C91F14F4B1D60006DEB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D690C91E14F4B1D60006DEB0 /* SenTestingKit.framework */; };
 		D690C92114F4B1D60006DEB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D690C92014F4B1D60006DEB0 /* UIKit.framework */; };
@@ -15,10 +19,6 @@
 		D690C92B14F4B1D70006DEB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D690C92914F4B1D70006DEB0 /* InfoPlist.strings */; };
 		D690C94B14F4B3A70006DEB0 /* NSArrayMapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C94A14F4B3A70006DEB0 /* NSArrayMapSpec.m */; };
 		D690C94E14F4B64D0006DEB0 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D690C94D14F4B64D0006DEB0 /* libKiwi.a */; };
-		D690C95F14F4B9570006DEB0 /* NSArray+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = D690C95B14F4B9570006DEB0 /* NSArray+Map.h */; };
-		D690C96014F4B9570006DEB0 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C95C14F4B9570006DEB0 /* NSArray+Map.m */; };
-		D690C96114F4B9570006DEB0 /* NSArray+Select.h in Headers */ = {isa = PBXBuildFile; fileRef = D690C95D14F4B9570006DEB0 /* NSArray+Select.h */; };
-		D690C96214F4B9570006DEB0 /* NSArray+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C95E14F4B9570006DEB0 /* NSArray+Select.m */; };
 		D690C96414F4BB840006DEB0 /* NSArraySelectSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96314F4BB840006DEB0 /* NSArraySelectSpec.m */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D60908DB14F4C19A007C0B2F /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
+		D60908DC14F4C19A007C0B2F /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
+		D60908DD14F4C19A007C0B2F /* NSArray+Select.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Select.h"; sourceTree = "<group>"; };
+		D60908DE14F4C19A007C0B2F /* NSArray+Select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Select.m"; sourceTree = "<group>"; };
 		D690C90D14F4B1D60006DEB0 /* libObjective-Linq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libObjective-Linq.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D690C91014F4B1D60006DEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D690C91414F4B1D60006DEB0 /* Objective-Linq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-Linq-Prefix.pch"; sourceTree = "<group>"; };
@@ -43,10 +47,6 @@
 		D690C92A14F4B1D70006DEB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D690C94A14F4B3A70006DEB0 /* NSArrayMapSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayMapSpec.m; sourceTree = "<group>"; };
 		D690C94D14F4B64D0006DEB0 /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKiwi.a; path = "../Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
-		D690C95B14F4B9570006DEB0 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Map.h"; path = "../../dist/NSArray+Map.h"; sourceTree = "<group>"; };
-		D690C95C14F4B9570006DEB0 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Map.m"; path = "../../dist/NSArray+Map.m"; sourceTree = "<group>"; };
-		D690C95D14F4B9570006DEB0 /* NSArray+Select.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Select.h"; path = "../../dist/NSArray+Select.h"; sourceTree = "<group>"; };
-		D690C95E14F4B9570006DEB0 /* NSArray+Select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Select.m"; path = "../../dist/NSArray+Select.m"; sourceTree = "<group>"; };
 		D690C96314F4BB840006DEB0 /* NSArraySelectSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArraySelectSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,10 +107,10 @@
 		D690C91214F4B1D60006DEB0 /* Objective-Linq */ = {
 			isa = PBXGroup;
 			children = (
-				D690C95B14F4B9570006DEB0 /* NSArray+Map.h */,
-				D690C95C14F4B9570006DEB0 /* NSArray+Map.m */,
-				D690C95D14F4B9570006DEB0 /* NSArray+Select.h */,
-				D690C95E14F4B9570006DEB0 /* NSArray+Select.m */,
+				D60908DB14F4C19A007C0B2F /* NSArray+Map.h */,
+				D60908DC14F4C19A007C0B2F /* NSArray+Map.m */,
+				D60908DD14F4C19A007C0B2F /* NSArray+Select.h */,
+				D60908DE14F4C19A007C0B2F /* NSArray+Select.m */,
 				D690C91314F4B1D60006DEB0 /* Supporting Files */,
 			);
 			path = "Objective-Linq";
@@ -150,8 +150,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D690C95F14F4B9570006DEB0 /* NSArray+Map.h in Headers */,
-				D690C96114F4B9570006DEB0 /* NSArray+Select.h in Headers */,
+				D60908DF14F4C19A007C0B2F /* NSArray+Map.h in Headers */,
+				D60908E114F4C19A007C0B2F /* NSArray+Select.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D690C96014F4B9570006DEB0 /* NSArray+Map.m in Sources */,
-				D690C96214F4B9570006DEB0 /* NSArray+Select.m in Sources */,
+				D60908E014F4C19A007C0B2F /* NSArray+Map.m in Sources */,
+				D60908E214F4C19A007C0B2F /* NSArray+Select.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +366,7 @@
 				INFOPLIST_FILE = "Objective-LinqTests/Objective-LinqTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = ../Kiwi/Kiwi;
+				USER_HEADER_SEARCH_PATHS = Kiwi/Kiwi;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -383,7 +383,7 @@
 				INFOPLIST_FILE = "Objective-LinqTests/Objective-LinqTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = ../Kiwi/Kiwi;
+				USER_HEADER_SEARCH_PATHS = Kiwi/Kiwi;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;

@@ -10,7 +10,7 @@ task :populate_dist do
     %w{h m}.each do |ext|
       input = File.read("meta/#{file}.#{ext}.erb")
       eruby = Erubis::Eruby.new(input)
-      File.open(File.join("dist", "#{file}.#{ext}"), "w").write(eruby.result(:types => types))
+      File.open(File.join("Objective-Linq", "#{file}.#{ext}"), "w").write(eruby.result(:types => types))
     end
   end
 end

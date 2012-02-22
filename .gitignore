@@ -1,4 +1,5 @@
-dist/
+Objective-Linq/*.h
+Objective-Linq/*.m
 Kiwi/
 
 project.xcworkspace/
