@@ -1,15 +1,7 @@
 require "erubis"
 
 desc "Render ERB templates to Objective-C source files in the 'dist' directory"
-task :populate do
-  Dir.entries(File.join(Dir.pwd, "src")).each do |e|
-    path = File.join(Dir.pwd, "src", e)
-
-    unless File.basename(path).match /\.|\.\./
-      FileUtils.cp_r(path, File.join(Dir.pwd, "dist", File.basename(e)))
-    end
-  end
-
+task :populate_dist do
   types = %w{String Number Value Array Object}
 
   %w{Map Select}.each do |category|
@@ -21,4 +13,9 @@ task :populate do
       File.open(File.join("dist", "#{file}.#{ext}"), "w").write(eruby.result(:types => types))
     end
   end
+end
+
+desc "Clears out the entire 'dist' directory (good for starting over)"
+task :nuke_dist do
+  FileUtils.rm_r(Dir.glob(File.join("dist", "*")))
 end
