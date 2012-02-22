@@ -1,7 +1,7 @@
 require "erubis"
 
-desc "Render ERB templates to Objective-C source files in the 'dist' directory"
-task :populate_dist do
+desc "Renders ERB templates to Objective-C source files"
+task :populate do
   types = %w{String Number Value Array Object}
 
   %w{Map Select}.each do |category|
@@ -13,9 +13,23 @@ task :populate_dist do
       File.open(File.join("Objective-Linq", "#{file}.#{ext}"), "w").write(eruby.result(:types => types))
     end
   end
+  
+  puts "Source populated."
 end
 
-desc "Clears out the entire 'dist' directory (good for starting over)"
-task :nuke_dist do
-  FileUtils.rm_r(Dir.glob(File.join("dist", "*")))
+desc "Clears generated files out of the Xcode project directory"
+task :nuke do
+  FileUtils.rm_r(Dir.glob(File.join("Objective-Linq", "*.{h,m}")))
+  puts "Generated files nuked."
+end
+
+desc "Compiles the Objective-C library"
+task :compile do
+  output = %x{xcodebuild -project Objective-Linq.xcodeproj}
+  if output.include?("** BUILD SUCCEEDED **")
+    puts "Build succeeded."
+  else
+    puts "Failed to compile:"
+    puts output
+  end
 end
