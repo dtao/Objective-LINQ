@@ -10,6 +10,10 @@ class PrimitiveType < Type
     end
   end
 
+  def reference?
+    false
+  end
+
   def friendly_name(capitalize_first_letter = true)
     result = @name
 
@@ -25,10 +29,6 @@ class PrimitiveType < Type
     end
 
     result
-  end
-
-  def reference?
-    false
   end
 
   def declare_boxed(var)

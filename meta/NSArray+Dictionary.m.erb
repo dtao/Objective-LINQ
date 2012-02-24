@@ -7,26 +7,9 @@
 - (NSDictionary *) dictionaryOf<%= value_type.friendly_name %>sWith<%= key_type.friendly_name %>Keys:(<%= value_type.friendly_name %>To<%= key_type.friendly_name %>Converter)converter {
   NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithCapacity:[self count]];
 
-<% if value_type.reference? -%>
-  for (<%= value_type.declare("element") %> in self) {
-<% if key_type.reference? -%>
-    [dictionary setObject:element forKey:converter(element)];
-<% else -%>
-    <%= key_type.declare_boxed("key") %> = <%= key_type.box("converter(element)") %>;
-    [dictionary setObject:element forKey:key];
-<% end -%>
-  }
-<% else -%>
   for (<%= value_type.declare_boxed("element") %> in self) {
-    <%= value_type.declare("value") %> = <%= value_type.unbox("element") %>;
-<% if key_type.reference? -%>
-    [dictionary setObject:element forKey:converter(value)];
-<% else -%>
-    <%= key_type.declare_boxed("key") %> = <%= key_type.box("converter(value)") %>;
-    [dictionary setObject:element forKey:key];
-<% end -%>
+    [dictionary setObject:element forKey:<%= key_type.box("converter(#{value_type.unbox('element')})") %>];
   }
-<% end -%>
 
   return dictionary;
 }

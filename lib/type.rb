@@ -5,12 +5,12 @@ class Type
     @name = name
   end
 
-  def friendly_name
-    @name
-  end
-
   def reference?
     true
+  end
+
+  def friendly_name
+    @name
   end
 
   def prefix
@@ -23,5 +23,17 @@ class Type
     else
       "#{prefix}#{name} #{var}"
     end
+  end
+
+  def declare_boxed(var = "")
+    declare(var)
+  end
+
+  def box(var)
+    var
+  end
+
+  def unbox(var)
+    var
   end
 end
