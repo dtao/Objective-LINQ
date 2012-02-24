@@ -20,6 +20,10 @@ task :populate do
     File.open(File.join("Objective-Linq", File.basename(f).chomp(".erb")), "w").write(eruby.result(:types => types))
   end
 
+  Dir.glob(File.join("meta", "*.{h,m}")).each do |f|
+    FileUtils.cp(f, "Objective-Linq")
+  end
+
   puts "Source populated."
 end
 
