@@ -1,8 +1,17 @@
 require "erubis"
 
+Dir.glob("lib/*.rb").each do |file|
+  require file
+end
+
 desc "Renders ERB templates to Objective-C source files"
 task :populate do
-  types = %w{String Number Value Array Object}
+  types = {
+    :ns => NSType.all,
+    :numeric => PrimitiveType.all
+  }
+
+  types[:all] = types.values.flatten
 
   Dir.glob(File.join("meta", "*.erb")).each do |f|
     input = File.read(f)

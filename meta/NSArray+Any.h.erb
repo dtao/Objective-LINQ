@@ -2,8 +2,8 @@
 
 @interface NSArray(Any)
 
-<% types.each do |target| -%>
-- (BOOL) any<%= target %>:(<%= target %>Predicate)predicate;
+<% types[:all].each do |target| -%>
+- (BOOL) any<%= target.friendly_name %>:(<%= target.friendly_name %>Predicate)predicate;
 <% end -%>
 
 @end

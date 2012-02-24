@@ -2,9 +2,9 @@
 
 @interface NSArray(Map)
 
-<% types.each do |source| -%>
-<% types.each do |target| -%>
-- (NSArray *) map<%= source %>sTo<%= target %>s:(<%= source %>To<%= target %>Converter)converter;
+<% types[:all].each do |source| -%>
+<% types[:all].each do |target| -%>
+- (NSArray *) map<%= source.friendly_name %>sTo<%= target.friendly_name %>s:(<%= source.friendly_name %>To<%= target.friendly_name %>Converter)converter;
 <% end -%>
 <% end -%>
 

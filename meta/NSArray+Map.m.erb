@@ -2,15 +2,29 @@
 
 @implementation NSArray(Map)
 
-<% types.each do |source| -%>
-<% types.each do |target| -%>
-<% source_type = "NS#{source}" %>
-- (NSArray *) map<%= source %>sTo<%= target %>s:(<%= source %>To<%= target %>Converter)converter {
+<% types[:all].each do |source| -%>
+<% types[:all].each do |target| -%>
+- (NSArray *) map<%= source.friendly_name %>sTo<%= target.friendly_name %>s:(<%= source.friendly_name %>To<%= target.friendly_name %>Converter)converter {
   NSMutableArray *result = [NSMutableArray arrayWithCapacity:[self count]];
 
-  for (<%= source_type %> *element in self) {
+<% if source.reference? -%>
+  for (<%= source.declare("element") %> in self) {
+<% if target.reference? -%>
     [result addObject:converter(element)];
+<% else -%>
+    [result addObject:<%= target.box("converter(element)") %>];
+<% end -%>
   }
+<% else -%>
+  for (<%= source.declare_boxed("element") %> in self) {
+    <%= source.declare("input") %> = <%= source.unbox("element") %>;
+<% if target.reference? -%>
+    [result addObject:converter(input)];
+<% else -%>
+    [result addObject:<%= target.box("converter(input)") %>];
+<% end -%>
+  }
+<% end -%>
 
   return result;
 }

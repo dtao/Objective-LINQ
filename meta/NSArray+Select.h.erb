@@ -2,8 +2,8 @@
 
 @interface NSArray(Select)
 
-<% types.each do |target| -%>
-- (NSArray *) select<%= target %>s:(<%= target %>Predicate)predicate;
+<% types[:all].each do |target| -%>
+- (NSArray *) select<%= target.friendly_name %>s:(<%= target.friendly_name %>Predicate)predicate;
 <% end -%>
 
 @end

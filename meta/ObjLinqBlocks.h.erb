@@ -1,12 +1,13 @@
-<% types.each do |source| -%>
-<% types.each do |target| -%>
-<% source_type = "NS#{source}" -%>
-<% target_type = "NS#{target}" -%>
-typedef <%= target_type %> *(^<%= source %>To<%=target %>Converter)(<%= source_type %> *input);
+<% types[:all].each do |source| -%>
+<% types[:all].each do |target| -%>
+typedef <%= target.declare %>(^<%= source.friendly_name %>To<%=target.friendly_name %>Converter)(<%= source.declare("input") %>);
 <% end -%>
 <% end -%>
 
-<% types.each do |target| -%>
-<% target_type = "NS#{target}" -%>
-typedef BOOL (^<%= target %>Predicate)(<%= target_type %> *input);
+<% types[:all].each do |target| -%>
+typedef BOOL (^<%= target.friendly_name %>Predicate)(<%= target.declare("input") %>);
+<% end -%>
+
+<% types[:numeric].each do |target| -%>
+typedef <%= target.declare %>(^<%= target.friendly_name %>Addition)(<%= target.declare("x") %>, <%= target.declare("y") %>);
 <% end -%>

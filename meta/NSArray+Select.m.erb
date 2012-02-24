@@ -2,16 +2,23 @@
 
 @implementation NSArray(Select)
 
-<% types.each do |target| -%>
-<% target_type = "NS#{target}" %>
-- (NSArray *) select<%= target %>s:(<%= target %>Predicate)predicate {
+<% types[:all].each do |target| -%>
+- (NSArray *) select<%= target.friendly_name %>s:(<%= target.friendly_name %>Predicate)predicate {
   NSMutableArray *result = [NSMutableArray array];
 
-  for (<%= target_type %> *element in self) {
+<% if target.reference? -%>
+  for (<%= target.declare("element") %> in self) {
     if (predicate(element)) {
       [result addObject:element];
     }
   }
+<% else -%>
+  for (<%= target.declare_boxed("element") %> in self) {
+    if (predicate(<%= target.unbox("element") %>)) {
+      [result addObject:element];
+    }
+  }
+<% end -%>
 
   return result;
 }

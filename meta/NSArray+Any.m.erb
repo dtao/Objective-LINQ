@@ -2,14 +2,22 @@
 
 @implementation NSArray(Any)
 
-<% types.each do |target| -%>
-<% target_type = "NS#{target}" -%>
-- (BOOL) any<%= target %>:(<%= target %>Predicate)predicate {
-  for (<%= target_type %> *element in self) {
+<% types[:all].each do |target| -%>
+- (BOOL) any<%= target.friendly_name %>:(<%= target.friendly_name %>Predicate)predicate {
+<% if target.reference? -%>
+  for (<%= target.declare("element") %> in self) {
     if (predicate(element)) {
       return YES;
     }
   }
+<% else -%>
+  for (<%= target.declare_boxed("element") %> in self) {
+    <%= target.declare("value") %> = <%= target.unbox("element") %>;
+    if (predicate(value)) {
+      return YES;
+    }
+  }
+<% end -%>
 
   return NO;
 }

@@ -2,16 +2,31 @@
 
 @implementation NSArray(Dictionary)
 
-<% types.each do |source| -%>
-<% types.each do |target| -%>
-<% source_type = "NS#{source}" %>
-<% target_type = "NS#{target}" %>
-- (NSDictionary *) dictionaryOf<%= source %>sWith<%= target %>Keys:(<%= source %>To<%= target %>Converter)converter {
+<% types[:all].each do |key_type| -%>
+<% types[:all].each do |value_type| -%>
+- (NSDictionary *) dictionaryOf<%= value_type.friendly_name %>sWith<%= key_type.friendly_name %>Keys:(<%= value_type.friendly_name %>To<%= key_type.friendly_name %>Converter)converter {
   NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithCapacity:[self count]];
 
-  for (<%= source_type %> *element in self) {
+<% if value_type.reference? -%>
+  for (<%= value_type.declare("element") %> in self) {
+<% if key_type.reference? -%>
     [dictionary setObject:element forKey:converter(element)];
+<% else -%>
+    <%= key_type.declare_boxed("key") %> = <%= key_type.box("converter(element)") %>;
+    [dictionary setObject:element forKey:key];
+<% end -%>
   }
+<% else -%>
+  for (<%= value_type.declare_boxed("element") %> in self) {
+    <%= value_type.declare("value") %> = <%= value_type.unbox("element") %>;
+<% if key_type.reference? -%>
+    [dictionary setObject:element forKey:converter(value)];
+<% else -%>
+    <%= key_type.declare_boxed("key") %> = <%= key_type.box("converter(value)") %>;
+    [dictionary setObject:element forKey:key];
+<% end -%>
+  }
+<% end -%>
 
   return dictionary;
 }

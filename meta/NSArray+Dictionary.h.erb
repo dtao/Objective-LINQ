@@ -2,9 +2,9 @@
 
 @interface NSArray(Dictionary)
 
-<% types.each do |source| -%>
-<% types.each do |target| -%>
-- (NSDictionary *) dictionaryOf<%= source %>sWith<%= target %>Keys:(<%= source %>To<%= target %>Converter)converter;
+<% types[:all].each do |source| -%>
+<% types[:all].each do |target| -%>
+- (NSDictionary *) dictionaryOf<%= source.friendly_name %>sWith<%= target.friendly_name %>Keys:(<%= source.friendly_name %>To<%= target.friendly_name %>Converter)converter;
 <% end -%>
 <% end -%>
 
