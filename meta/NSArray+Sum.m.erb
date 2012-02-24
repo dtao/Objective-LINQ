@@ -1,0 +1,17 @@
+#import "NSArray+Sum.h"
+
+@implementation NSArray(Sum)
+
+<% types[:numeric].each do |target| -%>
+- (<%= target.name %>) sum<%= target.friendly_name %>s:(<%= target.friendly_name %>Addition)addition {
+  <%= target.declare("sum") %> = 0;
+
+  for (<%= target.declare_boxed("element") %> in self) {
+    sum = addition(sum, <%= target.unbox("element") %>);
+  }
+
+  return sum;
+}
+
+<% end -%>
+@end

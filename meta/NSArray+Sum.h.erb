@@ -1,0 +1,9 @@
+#import "ObjLinqBlocks.h"
+
+@interface NSArray(Sum)
+
+<% types[:numeric].each do |target| -%>
+- (<%= target.name %>) sum<%= target.friendly_name %>s:(<%= target.friendly_name %>Addition)addition;
+<% end -%>
+
+@end

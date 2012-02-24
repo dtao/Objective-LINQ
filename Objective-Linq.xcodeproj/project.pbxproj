@@ -28,6 +28,9 @@
 		D690C96414F4BB840006DEB2 /* NSArray+Dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEB1 /* NSArray+Dictionary.h */; };
 		D690C96414F4BB840006DEB4 /* NSArray+Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEB3 /* NSArray+Dictionary.m */; };
 		D690C96414F4BB840006DEB6 /* NSArrayDictionarySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEB5 /* NSArrayDictionarySpec.m */; };
+		D690C96414F4BB840006DEB8 /* NSArray+Sum.h in Headers */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEB7 /* NSArray+Sum.h */; };
+		D690C96414F4BB840006DEBA /* NSArray+Sum.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEB9 /* NSArray+Sum.m */; };
+		D690C96414F4BB840006DEBC /* NSArraySumSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEBB /* NSArraySumSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		D690C96414F4BB840006DEB1 /* NSArray+Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Dictionary.h"; sourceTree = "<group>"; };
 		D690C96414F4BB840006DEB3 /* NSArray+Dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Dictionary.m"; sourceTree = "<group>"; };
 		D690C96414F4BB840006DEB5 /* NSArrayDictionarySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayDictionarySpec.m; sourceTree = "<group>"; };
+		D690C96414F4BB840006DEB7 /* NSArray+Sum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sum.h"; sourceTree = "<group>"; };
+		D690C96414F4BB840006DEB9 /* NSArray+Sum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sum.m"; sourceTree = "<group>"; };
+		D690C96414F4BB840006DEBB /* NSArraySumSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArraySumSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,8 @@
 		D690C91214F4B1D60006DEB0 /* Objective-Linq */ = {
 			isa = PBXGroup;
 			children = (
+				D690C96414F4BB840006DEB9 /* NSArray+Sum.m */,
+				D690C96414F4BB840006DEB7 /* NSArray+Sum.h */,
 				D690C96414F4BB840006DEB3 /* NSArray+Dictionary.m */,
 				D690C96414F4BB840006DEB1 /* NSArray+Dictionary.h */,
 				D60908EA14F52D0B007C0B2F /* NSArray+All.h */,
@@ -152,6 +160,7 @@
 		D690C92614F4B1D70006DEB0 /* Objective-LinqTests */ = {
 			isa = PBXGroup;
 			children = (
+				D690C96414F4BB840006DEBB /* NSArraySumSpec.m */,
 				D690C96414F4BB840006DEB5 /* NSArrayDictionarySpec.m */,
 				D690C92714F4B1D70006DEB0 /* Supporting Files */,
 				D690C94A14F4B3A70006DEB0 /* NSArrayMapSpec.m */,
@@ -182,6 +191,7 @@
 				D60908E114F4C19A007C0B2F /* NSArray+Select.h in Headers */,
 				D60908E514F526E4007C0B2F /* NSArray+Any.h in Headers */,
 				D690C96414F4BB840006DEB2 /* NSArray+Dictionary.h in Headers */,
+				D690C96414F4BB840006DEB8 /* NSArray+Sum.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +296,7 @@
 				D60908E214F4C19A007C0B2F /* NSArray+Select.m in Sources */,
 				D60908E614F526E4007C0B2F /* NSArray+Any.m in Sources */,
 				D690C96414F4BB840006DEB4 /* NSArray+Dictionary.m in Sources */,
+				D690C96414F4BB840006DEBA /* NSArray+Sum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +310,7 @@
 				D60908EC14F52D0B007C0B2F /* NSArray+All.m in Sources */,
 				D60908EE14F52D21007C0B2F /* NSArrayAllSpec.m in Sources */,
 				D690C96414F4BB840006DEB6 /* NSArrayDictionarySpec.m in Sources */,
+				D690C96414F4BB840006DEBC /* NSArraySumSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
