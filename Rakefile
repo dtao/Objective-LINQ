@@ -25,6 +25,7 @@ end
 desc "Clears generated files out of the Xcode project directory"
 task :nuke do
   FileUtils.rm_r(Dir.glob(File.join("Objective-Linq", "*.{h,m}")))
+  FileUtils.rm_r("build/")
   puts "Generated files nuked."
 end
 
