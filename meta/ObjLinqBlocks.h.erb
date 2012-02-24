@@ -7,7 +7,3 @@ typedef <%= target.declare %>(^<%= source.friendly_name %>To<%=target.friendly_n
 <% types[:all].each do |target| -%>
 typedef BOOL (^<%= target.friendly_name %>Predicate)(<%= target.declare("input") %>);
 <% end -%>
-
-<% types[:numeric].each do |target| -%>
-typedef <%= target.declare %>(^<%= target.friendly_name %>Addition)(<%= target.declare("x") %>, <%= target.declare("y") %>);
-<% end -%>
