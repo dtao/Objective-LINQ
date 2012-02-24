@@ -9,12 +9,12 @@ class Type
     true
   end
 
-  def friendly_name
-    @name
-  end
-
   def prefix
     ""
+  end
+
+  def friendly_name
+    @name
   end
 
   def declare(var = "")

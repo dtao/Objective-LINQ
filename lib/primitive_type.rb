@@ -1,5 +1,4 @@
 require File.join(File.dirname(__FILE__), "type")
-require File.join(File.dirname(__FILE__), "ns_type")
 
 class PrimitiveType < Type
   class << self

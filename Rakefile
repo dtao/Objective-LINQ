@@ -8,7 +8,8 @@ desc "Renders ERB templates to Objective-C source files"
 task :populate do
   types = {
     :ns => NSType.all,
-    :numeric => PrimitiveType.all
+    :numeric => PrimitiveType.all,
+    :graphics => CGType.all
   }
 
   types[:all] = types.values.flatten
