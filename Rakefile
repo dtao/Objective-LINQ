@@ -1,7 +1,7 @@
 require "erubis"
 
 Dir.glob("lib/*.rb").each do |file|
-  require file
+  require File.join(File.dirname(__FILE__), file)
 end
 
 desc "Renders ERB templates to Objective-C source files"
