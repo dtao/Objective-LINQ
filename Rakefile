@@ -12,7 +12,7 @@ task :populate do
     :graphics => CGType.all
   }
 
-  types[:all] = types.values.flatten
+  types[:all] = [ObjectType.new] + types.values.flatten
 
   Dir.glob(File.join("meta", "*.erb")).each do |f|
     input = File.read(f)
