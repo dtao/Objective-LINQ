@@ -4,20 +4,11 @@
 
 <% types[:all].each do |target| -%>
 - (BOOL) all<%= target.friendly_name %>s:(<%= target.friendly_name %>Predicate)predicate {
-<% if target.reference? -%>
-  for (<%= target.declare("element") %> in self) {
-    if (!predicate(element)) {
-      return NO;
-    }
-  }
-<% else -%>
   for (<%= target.declare_boxed("element") %> in self) {
-    <%= target.declare("value") %> = <%= target.unbox("element") %>;
-    if (!predicate(value)) {
+    if (!predicate(<%= target.unbox("element") %>)) {
       return NO;
     }
   }
-<% end -%>
 
   return YES;
 }

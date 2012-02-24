@@ -7,24 +7,9 @@
 - (NSArray *) map<%= source.friendly_name %>sTo<%= target.friendly_name %>s:(<%= source.friendly_name %>To<%= target.friendly_name %>Converter)converter {
   NSMutableArray *result = [NSMutableArray arrayWithCapacity:[self count]];
 
-<% if source.reference? -%>
-  for (<%= source.declare("element") %> in self) {
-<% if target.reference? -%>
-    [result addObject:converter(element)];
-<% else -%>
-    [result addObject:<%= target.box("converter(element)") %>];
-<% end -%>
-  }
-<% else -%>
   for (<%= source.declare_boxed("element") %> in self) {
-    <%= source.declare("input") %> = <%= source.unbox("element") %>;
-<% if target.reference? -%>
-    [result addObject:converter(input)];
-<% else -%>
-    [result addObject:<%= target.box("converter(input)") %>];
-<% end -%>
+    [result addObject:<%= target.box("converter(#{source.unbox('element')})") %>];
   }
-<% end -%>
 
   return result;
 }

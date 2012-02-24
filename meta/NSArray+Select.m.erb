@@ -6,19 +6,11 @@
 - (NSArray *) select<%= target.friendly_name %>s:(<%= target.friendly_name %>Predicate)predicate {
   NSMutableArray *result = [NSMutableArray array];
 
-<% if target.reference? -%>
-  for (<%= target.declare("element") %> in self) {
-    if (predicate(element)) {
-      [result addObject:element];
-    }
-  }
-<% else -%>
   for (<%= target.declare_boxed("element") %> in self) {
     if (predicate(<%= target.unbox("element") %>)) {
       [result addObject:element];
     }
   }
-<% end -%>
 
   return result;
 }
