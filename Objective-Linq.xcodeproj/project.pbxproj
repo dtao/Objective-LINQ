@@ -153,25 +153,25 @@
 		D690C91214F4B1D60006DEB0 /* Objective-Linq */ = {
 			isa = PBXGroup;
 			children = (
-				D690C96414F4BB840006DECD /* NSArray+Reverse.m */,
-				D690C96414F4BB840006DECB /* NSArray+Reverse.h */,
-				D690C96414F4BB840006DEC3 /* NSArray+Take.m */,
-				D690C96414F4BB840006DEC1 /* NSArray+Take.h */,
-				D690C96414F4BB840006DEBF /* NSArray+Drop.m */,
-				D690C96414F4BB840006DEBD /* NSArray+Drop.h */,
-				D690C96414F4BB840006DEB9 /* NSArray+Sum.m */,
-				D690C96414F4BB840006DEB7 /* NSArray+Sum.h */,
-				D690C96414F4BB840006DEB3 /* NSArray+Dictionary.m */,
-				D690C96414F4BB840006DEB1 /* NSArray+Dictionary.h */,
 				D60908EA14F52D0B007C0B2F /* NSArray+All.h */,
 				D60908EB14F52D0B007C0B2F /* NSArray+All.m */,
-				D60908E914F52AAF007C0B2F /* ObjLinqBlocks.h */,
 				D60908E314F526E4007C0B2F /* NSArray+Any.h */,
 				D60908E414F526E4007C0B2F /* NSArray+Any.m */,
+				D690C96414F4BB840006DEB1 /* NSArray+Dictionary.h */,
+				D690C96414F4BB840006DEB3 /* NSArray+Dictionary.m */,
+				D690C96414F4BB840006DEBD /* NSArray+Drop.h */,
+				D690C96414F4BB840006DEBF /* NSArray+Drop.m */,
 				D60908DB14F4C19A007C0B2F /* NSArray+Map.h */,
 				D60908DC14F4C19A007C0B2F /* NSArray+Map.m */,
+				D690C96414F4BB840006DECB /* NSArray+Reverse.h */,
+				D690C96414F4BB840006DECD /* NSArray+Reverse.m */,
 				D60908DD14F4C19A007C0B2F /* NSArray+Select.h */,
 				D60908DE14F4C19A007C0B2F /* NSArray+Select.m */,
+				D690C96414F4BB840006DEB7 /* NSArray+Sum.h */,
+				D690C96414F4BB840006DEB9 /* NSArray+Sum.m */,
+				D690C96414F4BB840006DEC1 /* NSArray+Take.h */,
+				D690C96414F4BB840006DEC3 /* NSArray+Take.m */,
+				D60908E914F52AAF007C0B2F /* ObjLinqBlocks.h */,
 				D690C91314F4B1D60006DEB0 /* Supporting Files */,
 			);
 			path = "Objective-Linq";
@@ -188,16 +188,16 @@
 		D690C92614F4B1D70006DEB0 /* Objective-LinqTests */ = {
 			isa = PBXGroup;
 			children = (
-				D690C96414F4BB840006DEC9 /* NSArrayReverseSpec.m */,
-				D690C96414F4BB840006DEC7 /* NSArrayTakeSpec.m */,
-				D690C96414F4BB840006DEC5 /* NSArrayDropSpec.m */,
-				D690C96414F4BB840006DEBB /* NSArraySumSpec.m */,
-				D690C96414F4BB840006DEB5 /* NSArrayDictionarySpec.m */,
-				D690C92714F4B1D70006DEB0 /* Supporting Files */,
-				D690C94A14F4B3A70006DEB0 /* NSArrayMapSpec.m */,
-				D690C96314F4BB840006DEB0 /* NSArraySelectSpec.m */,
-				D60908E714F52708007C0B2F /* NSArrayAnySpec.m */,
 				D60908ED14F52D21007C0B2F /* NSArrayAllSpec.m */,
+				D60908E714F52708007C0B2F /* NSArrayAnySpec.m */,
+				D690C96414F4BB840006DEB5 /* NSArrayDictionarySpec.m */,
+				D690C96414F4BB840006DEC5 /* NSArrayDropSpec.m */,
+				D690C94A14F4B3A70006DEB0 /* NSArrayMapSpec.m */,
+				D690C96414F4BB840006DEC9 /* NSArrayReverseSpec.m */,
+				D690C96314F4BB840006DEB0 /* NSArraySelectSpec.m */,
+				D690C96414F4BB840006DEBB /* NSArraySumSpec.m */,
+				D690C96414F4BB840006DEC7 /* NSArrayTakeSpec.m */,
+				D690C92714F4B1D70006DEB0 /* Supporting Files */,
 			);
 			path = "Objective-LinqTests";
 			sourceTree = "<group>";
