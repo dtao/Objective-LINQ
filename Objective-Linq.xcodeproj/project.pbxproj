@@ -37,6 +37,9 @@
 		D690C96414F4BB840006DEC4 /* NSArray+Take.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEC3 /* NSArray+Take.m */; };
 		D690C96414F4BB840006DEC6 /* NSArrayDropSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEC5 /* NSArrayDropSpec.m */; };
 		D690C96414F4BB840006DEC8 /* NSArrayTakeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEC7 /* NSArrayTakeSpec.m */; };
+		D690C96414F4BB840006DECA /* NSArrayReverseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEC9 /* NSArrayReverseSpec.m */; };
+		D690C96414F4BB840006DECC /* NSArray+Reverse.h in Headers */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DECB /* NSArray+Reverse.h */; };
+		D690C96414F4BB840006DECE /* NSArray+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DECD /* NSArray+Reverse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,9 @@
 		D690C96414F4BB840006DEC3 /* NSArray+Take.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Take.m"; sourceTree = "<group>"; };
 		D690C96414F4BB840006DEC5 /* NSArrayDropSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayDropSpec.m; sourceTree = "<group>"; };
 		D690C96414F4BB840006DEC7 /* NSArrayTakeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTakeSpec.m; sourceTree = "<group>"; };
+		D690C96414F4BB840006DEC9 /* NSArrayReverseSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayReverseSpec.m; sourceTree = "<group>"; };
+		D690C96414F4BB840006DECB /* NSArray+Reverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Reverse.h"; sourceTree = "<group>"; };
+		D690C96414F4BB840006DECD /* NSArray+Reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Reverse.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,8 @@
 		D690C91214F4B1D60006DEB0 /* Objective-Linq */ = {
 			isa = PBXGroup;
 			children = (
+				D690C96414F4BB840006DECD /* NSArray+Reverse.m */,
+				D690C96414F4BB840006DECB /* NSArray+Reverse.h */,
 				D690C96414F4BB840006DEC3 /* NSArray+Take.m */,
 				D690C96414F4BB840006DEC1 /* NSArray+Take.h */,
 				D690C96414F4BB840006DEBF /* NSArray+Drop.m */,
@@ -176,6 +184,7 @@
 		D690C92614F4B1D70006DEB0 /* Objective-LinqTests */ = {
 			isa = PBXGroup;
 			children = (
+				D690C96414F4BB840006DEC9 /* NSArrayReverseSpec.m */,
 				D690C96414F4BB840006DEC7 /* NSArrayTakeSpec.m */,
 				D690C96414F4BB840006DEC5 /* NSArrayDropSpec.m */,
 				D690C96414F4BB840006DEBB /* NSArraySumSpec.m */,
@@ -212,6 +221,7 @@
 				D690C96414F4BB840006DEB8 /* NSArray+Sum.h in Headers */,
 				D690C96414F4BB840006DEBE /* NSArray+Drop.h in Headers */,
 				D690C96414F4BB840006DEC2 /* NSArray+Take.h in Headers */,
+				D690C96414F4BB840006DECC /* NSArray+Reverse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +329,7 @@
 				D690C96414F4BB840006DEBA /* NSArray+Sum.m in Sources */,
 				D690C96414F4BB840006DEC0 /* NSArray+Drop.m in Sources */,
 				D690C96414F4BB840006DEC4 /* NSArray+Take.m in Sources */,
+				D690C96414F4BB840006DECE /* NSArray+Reverse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +346,7 @@
 				D690C96414F4BB840006DEBC /* NSArraySumSpec.m in Sources */,
 				D690C96414F4BB840006DEC6 /* NSArrayDropSpec.m in Sources */,
 				D690C96414F4BB840006DEC8 /* NSArrayTakeSpec.m in Sources */,
+				D690C96414F4BB840006DECA /* NSArrayReverseSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
