@@ -1,8 +1,8 @@
-build/
 Objective-Linq/*.h
 Objective-Linq/*.m
-Kiwi/
-
+Pods/
+Objective-Linq.xcworkspace/
 project.xcworkspace/
+build/
 xcuserdata/
 *.xcuserstate

@@ -1,10 +1,14 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    cocoapods (0.5.1)
+      xcodeproj (~> 0.1.0)
     erubis (2.7.0)
+    xcodeproj (0.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  cocoapods
   erubis

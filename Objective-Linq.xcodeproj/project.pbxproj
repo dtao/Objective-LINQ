@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B39711292670427C9C35C94E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E46C3A8FD9045B2B81E7174 /* libPods.a */; };
 		D60908DF14F4C19A007C0B2F /* NSArray+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = D60908DB14F4C19A007C0B2F /* NSArray+Map.h */; };
 		D60908E014F4C19A007C0B2F /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = D60908DC14F4C19A007C0B2F /* NSArray+Map.m */; };
 		D60908E114F4C19A007C0B2F /* NSArray+Select.h in Headers */ = {isa = PBXBuildFile; fileRef = D60908DD14F4C19A007C0B2F /* NSArray+Select.h */; };
@@ -23,7 +24,6 @@
 		D690C92514F4B1D70006DEB0 /* libObjective-Linq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D690C90D14F4B1D60006DEB0 /* libObjective-Linq.a */; };
 		D690C92B14F4B1D70006DEB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D690C92914F4B1D70006DEB0 /* InfoPlist.strings */; };
 		D690C94B14F4B3A70006DEB0 /* NSArrayMapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C94A14F4B3A70006DEB0 /* NSArrayMapSpec.m */; };
-		D690C94E14F4B64D0006DEB0 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D690C94D14F4B64D0006DEB0 /* libKiwi.a */; };
 		D690C96414F4BB840006DEB0 /* NSArraySelectSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96314F4BB840006DEB0 /* NSArraySelectSpec.m */; };
 		D690C96414F4BB840006DEB2 /* NSArray+Dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEB1 /* NSArray+Dictionary.h */; };
 		D690C96414F4BB840006DEB4 /* NSArray+Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D690C96414F4BB840006DEB3 /* NSArray+Dictionary.m */; };
@@ -53,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E46C3A8FD9045B2B81E7174 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60908DB14F4C19A007C0B2F /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
 		D60908DC14F4C19A007C0B2F /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
 		D60908DD14F4C19A007C0B2F /* NSArray+Select.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Select.h"; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		D690C96414F4BB840006DEC9 /* NSArrayReverseSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayReverseSpec.m; sourceTree = "<group>"; };
 		D690C96414F4BB840006DECB /* NSArray+Reverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Reverse.h"; sourceTree = "<group>"; };
 		D690C96414F4BB840006DECD /* NSArray+Reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Reverse.m"; sourceTree = "<group>"; };
+		FCB83C43E568401FB23AC624 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +107,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D690C94E14F4B64D0006DEB0 /* libKiwi.a in Frameworks */,
 				D690C91F14F4B1D60006DEB0 /* SenTestingKit.framework in Frameworks */,
 				D690C92114F4B1D60006DEB0 /* UIKit.framework in Frameworks */,
 				D690C92214F4B1D60006DEB0 /* Foundation.framework in Frameworks */,
 				D690C92514F4B1D70006DEB0 /* libObjective-Linq.a in Frameworks */,
+				B39711292670427C9C35C94E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +125,7 @@
 				D690C92614F4B1D70006DEB0 /* Objective-LinqTests */,
 				D690C90F14F4B1D60006DEB0 /* Frameworks */,
 				D690C90E14F4B1D60006DEB0 /* Products */,
+				FCB83C43E568401FB23AC624 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +145,7 @@
 				D690C91014F4B1D60006DEB0 /* Foundation.framework */,
 				D690C91E14F4B1D60006DEB0 /* SenTestingKit.framework */,
 				D690C92014F4B1D60006DEB0 /* UIKit.framework */,
+				9E46C3A8FD9045B2B81E7174 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -235,6 +239,7 @@
 				D690C90914F4B1D60006DEB0 /* Sources */,
 				D690C90A14F4B1D60006DEB0 /* Frameworks */,
 				D690C90B14F4B1D60006DEB0 /* Headers */,
+				FFA674C6367C48E498886DA1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +258,7 @@
 				D690C91914F4B1D60006DEB0 /* Frameworks */,
 				D690C91A14F4B1D60006DEB0 /* Resources */,
 				D690C91B14F4B1D60006DEB0 /* ShellScript */,
+				FFA674C6367C48E498886DA1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,6 +320,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		FFA674C6367C48E498886DA1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -416,10 +436,12 @@
 		};
 		D690C93214F4B1D70006DEB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCB83C43E568401FB23AC624 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Objective_Linq.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Objective-Linq/Objective-Linq-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -428,10 +450,12 @@
 		};
 		D690C93314F4B1D70006DEB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCB83C43E568401FB23AC624 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Objective_Linq.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Objective-Linq/Objective-Linq-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -440,16 +464,20 @@
 		};
 		D690C93514F4B1D70006DEB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCB83C43E568401FB23AC624 /* Pods.xcconfig */;
 			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Objective-Linq/Objective-Linq-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Objective-LinqTests/Objective-LinqTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = Kiwi/Kiwi;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -457,16 +485,20 @@
 		};
 		D690C93614F4B1D70006DEB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCB83C43E568401FB23AC624 /* Pods.xcconfig */;
 			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Objective-Linq/Objective-Linq-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Objective-LinqTests/Objective-LinqTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = Kiwi/Kiwi;
 				WRAPPER_EXTENSION = octest;
 			};
