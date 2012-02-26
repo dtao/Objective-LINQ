@@ -17,6 +17,18 @@ class Type
     @name
   end
 
+  def cast(var)
+    if reference?
+      "(#{prefix}#{name} *)(#{var})"
+    else
+      "(#{prefix}#{name})(#{var})"
+    end
+  end
+
+  def cast_boxed(var)
+    "((#{declare_boxed()})#{var})"
+  end
+
   def declare(var = "")
     if reference?
       "#{prefix}#{name} *#{var}"

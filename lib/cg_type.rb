@@ -17,7 +17,7 @@ class CGType < Type
     "CG"
   end
 
-  def declare_boxed(var)
+  def declare_boxed(var = "")
     "NSValue *#{var}"
   end
 

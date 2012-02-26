@@ -30,7 +30,7 @@ class PrimitiveType < Type
     result
   end
 
-  def declare_boxed(var)
+  def declare_boxed(var = "")
     "NSNumber *#{var}"
   end
 
