@@ -1,7 +1,6 @@
 Objective-Linq/*.h
 Objective-Linq/*.m
 Pods/
-Objective-Linq.xcworkspace/
 project.xcworkspace/
 build/
 xcuserdata/
